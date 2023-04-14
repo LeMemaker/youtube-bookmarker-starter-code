@@ -5,7 +5,7 @@ chrome.tabs.onUpdated.addListener((tabId, tab) => {
   
       chrome.tabs.sendMessage(tabId, {
         type: "NEW",
-        videoId: urlParameters.get("v"),
+        videoId: urlParameters.get("v")
       });
     }
   });
